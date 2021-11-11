@@ -53,28 +53,30 @@
         <img src="../assets/dc-logo-bg.png" alt="" />
       </div>
     </div>
-    <div class="contacts">
-      <div class="btn">
-        <span> SIGN-UP NOW! </span>
+    <div class="contactBar">
+      <div class="contacts">
+        <div class="btn">
+          <span> SIGN-UP NOW! </span>
+        </div>
+        <ul>
+          <li>FOLLOW US</li>
+          <li>
+            <img src="../assets/footer-facebook.png" alt="" />
+          </li>
+          <li>
+            <img src="../assets/footer-twitter.png" alt="" />
+          </li>
+          <li>
+            <img src="../assets/footer-youtube.png" alt="" />
+          </li>
+          <li>
+            <img src="../assets/footer-pinterest.png" alt="" />
+          </li>
+          <li>
+            <img src="../assets/footer-periscope.png" alt="" />
+          </li>
+        </ul>
       </div>
-      <ul>
-        <il>FOLLOW US</il>
-        <il>
-          <img src="../assets/footer-facebook.png" alt="" />
-        </il>
-        <il>
-          <img src="../assets/footer-twitter.png" alt="" />
-        </il>
-        <il>
-          <img src="../assets/footer-youtube.png" alt="" />
-        </il>
-        <il>
-          <img src="../assets/footer-pinterest.png" alt="" />
-        </il>
-        <il>
-          <img src="../assets/footer-periscope.png" alt="" />
-        </il>
-      </ul>
     </div>
   </div>
 </template>
@@ -124,17 +126,40 @@
     }
   }
 
-  .contacts {
-    position: relative;
+  .contactBar {
     height: 100px;
+    position: relative;
     background-color: rgb(54, 54, 54);
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    ul:first-child {
-      color: chartreuse;
+    .contacts {
+      margin: auto;
+      width: 70%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      border: 1px solid cornflowerblue;
+      padding: 0.5rem;
+      color: white;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    ul :first-child {
+      color: cornflowerblue;
+    }
+
+    li {
+      padding: 0.5rem;
+      font-size: 1.2rem;
     }
   }
 }

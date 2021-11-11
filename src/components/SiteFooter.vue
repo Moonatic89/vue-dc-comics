@@ -20,6 +20,7 @@
             <dd>Shop DC Collectibles</dd>
           </dl>
         </div>
+
         <div class="midCol">
           <dl>
             <dt>DC</dt>
@@ -36,13 +37,35 @@
             <dd>Contact Us</dd>
           </dl>
         </div>
-        <div class="rightCol"></div>
-        <div class="logoBig">
-          <img src="../assets/dc-logo-bg.png" alt="" />
+
+        <div class="rightCol">
+          <dl>
+            <dt>SITES</dt>
+            <dd>DC</dd>
+            <dd>MAD Magazine</dd>
+            <dd>DC Kids</dd>
+            <dd>DC Universe</dd>
+            <dd>DC Power Visa</dd>
+          </dl>
         </div>
       </div>
+      <div class="logoBig">
+        <img src="../assets/dc-logo-bg.png" alt="" />
+      </div>
     </div>
-    <div class="contacts"></div>
+    <div class="contacts">
+      <div class="btn">
+        <span> SIGN-UP NOW! </span>
+      </div>
+      <dl>
+        <dt>FOLLOW US</dt>
+        <il></il>
+        <il></il>
+        <il></il>
+        <il></il>
+        <il></il>
+      </dl>
+    </div>
   </div>
 </template>
 
@@ -55,21 +78,36 @@
   width: 100%;
   height: calc(100vh - 354px);
   background-color: black;
+  background-image: url("../assets/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .linkBlock {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
     height: calc(100vh - 454px);
-    background-image: url("../assets/footer-bg.jpg");
+    align-items: center;
 
     .links {
       width: 70%;
       display: flex;
-      justify-content: space-between;
+
+      dl {
+        color: gray;
+        padding: 1rem;
+      }
+
+      dt {
+        color: white;
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+      }
     }
 
     .logoBig {
       img {
-        transform: translate(0, -20%);
-        // max-height: calc(100vh - 454px);
         width: 100%;
         object-fit: cover;
       }

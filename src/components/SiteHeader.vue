@@ -1,5 +1,5 @@
 <template>
-  <div class="SiteHeader">
+  <div class="siteHeader">
     <nav>
       <div class="logo">
         <img src="../assets/dc-logo.png" alt="" />
@@ -26,7 +26,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 @import "../assets/scss/variables.scss";
-.SiteHeader {
+.siteHeader {
   height: 118px;
 
   nav {

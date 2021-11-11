@@ -38,10 +38,11 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .siteMain {
-  height: 118px;
+  height: 236px;
   background-color: black;
 
   .content {
+    height: 118px;
     margin: auto;
     width: 70%;
 

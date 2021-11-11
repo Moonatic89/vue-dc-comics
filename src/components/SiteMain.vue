@@ -6,11 +6,26 @@
     <div class="grid">
       <div class="row">
         <ul>
-          <li>DIGITAL COMICS</li>
-          <li>DC MERCHANDISE</li>
-          <li>SUBSCRIPTION</li>
-          <li>COMIC SHOP LOCATOR</li>
-          <li>DC POWER VISA</li>
+          <li>
+            <img src="../assets/buy-comics-digital-comics.png" alt="" />
+            DIGITAL COMICS
+          </li>
+          <li>
+            <img src="../assets/buy-comics-merchandise.png" alt="" />
+            DC MERCHANDISE
+          </li>
+          <li>
+            <img src="../assets/buy-comics-subscriptions.png" alt="" />
+            SUBSCRIPTION
+          </li>
+          <li>
+            <img src="../assets/buy-comics-shop-locator.png" alt="" />
+            COMIC SHOP LOCATOR
+          </li>
+          <li>
+            <img src="../assets/buy-dc-power-visa.svg" alt="" />
+            DC POWER VISA
+          </li>
         </ul>
       </div>
     </div>
@@ -40,20 +55,29 @@
   .grid {
     height: 118px;
     background-color: cornflowerblue;
-  }
-  ul {
-    height: 118px;
-    margin: auto;
-    list-style: none;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  li {
-    padding: 0 0.5rem;
-    font-size: 1rem;
-    color: white;
+
+    ul {
+      height: 118px;
+      margin: auto;
+      width: 70%;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        height: 50px;
+        max-width: 50px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+        color: white;
+      }
+    }
   }
 }
 </style>

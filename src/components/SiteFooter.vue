@@ -57,14 +57,24 @@
       <div class="btn">
         <span> SIGN-UP NOW! </span>
       </div>
-      <dl>
-        <dt>FOLLOW US</dt>
-        <il></il>
-        <il></il>
-        <il></il>
-        <il></il>
-        <il></il>
-      </dl>
+      <ul>
+        <il>FOLLOW US</il>
+        <il>
+          <img src="../assets/footer-facebook.png" alt="" />
+        </il>
+        <il>
+          <img src="../assets/footer-twitter.png" alt="" />
+        </il>
+        <il>
+          <img src="../assets/footer-youtube.png" alt="" />
+        </il>
+        <il>
+          <img src="../assets/footer-pinterest.png" alt="" />
+        </il>
+        <il>
+          <img src="../assets/footer-periscope.png" alt="" />
+        </il>
+      </ul>
     </div>
   </div>
 </template>
@@ -117,8 +127,15 @@
   .contacts {
     position: relative;
     height: 100px;
-    background-color: gray;
+    background-color: rgb(54, 54, 54);
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul:first-child {
+      color: chartreuse;
+    }
   }
 }
 </style>

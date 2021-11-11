@@ -30,8 +30,10 @@
   height: 118px;
 
   nav {
+    margin: auto;
+    width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -41,7 +43,7 @@
   }
 
   li {
-    padding: 0 1rem;
+    padding: 0 0.7rem;
     line-height: 118px;
   }
   .bottomLine {

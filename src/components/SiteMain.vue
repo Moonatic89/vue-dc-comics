@@ -6,9 +6,10 @@
         <div>
           <Card
             v-for="card in cards"
-            v-key:comicImg="card.thumb"
-            v-key:comicName="card.series"
-          >
+            :key="card.ID"
+            :comicImg="card.thumb"
+            :comicName="card.series"
+          />
         </div>
       </div>
 
@@ -44,7 +45,7 @@
 </template>
 
 <script>
-import Card from "./components/Card.vue";
+import Card from "./Card.vue";
 
 export default {
   name: "SiteMain",

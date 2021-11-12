@@ -1,6 +1,14 @@
 <template>
   <div class="siteMain">
     <div class="content">
+      <!-- Here goes the grid -->
+      <div class="row">
+        <div>
+        <Card v-for="card in cards" v-bind:thumb >
+
+        </div>
+      </div>
+
       <span> --&#62; Content goes here &#60;-- </span>
     </div>
     <div class="grid">
@@ -33,6 +41,14 @@
 </template>
 
 <script>
+import Card from "./components/Card.vue";
+
+export default {
+  name: "SiteMain",
+  components: {
+    Card,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

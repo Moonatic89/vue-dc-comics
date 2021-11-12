@@ -5,6 +5,9 @@
         <img src="../assets/jumbotron.jpg" alt="" />
       </div>
       <!-- Here goes the grid -->
+      <div class="sectionTag">
+        <div class="tagText">CURRENT SERIES</div>
+      </div>
       <div class="row">
         <Card
           v-for="card in cards"
@@ -147,6 +150,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+@import;
 .siteMain {
   position: relative;
   z-index: 1;
@@ -164,6 +168,23 @@ export default {
         height: 100%;
         object-position: top;
         object-fit: cover;
+      }
+    }
+
+    .sectionTag {
+      transform: translate(0, -50%);
+      width: 70%;
+      margin: auto;
+      color: white;
+
+      .tagText {
+        font-weight: bold;
+        font-size: 1.3rem;
+        width: 250px;
+        height: 50px;
+        background-color: cornflowerblue;
+        line-height: 50px;
+        text-align: center;
       }
     }
 

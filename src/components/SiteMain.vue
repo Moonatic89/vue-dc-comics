@@ -1,6 +1,9 @@
 <template>
   <div class="siteMain">
     <div class="content">
+      <div class="jumbo">
+        <img src="../assets/jumbotron.jpg" alt="" />
+      </div>
       <!-- Here goes the grid -->
       <div class="row">
         <Card
@@ -152,10 +155,21 @@ export default {
 
   .content {
     // height: 118px;
-    margin: auto;
-    width: 70%;
+
+    .jumbo {
+      height: 400px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: top;
+        object-fit: cover;
+      }
+    }
 
     .row {
+      margin: auto;
+      width: 70%;
       display: flex;
       flex-wrap: wrap;
       padding: 1rem;
@@ -164,14 +178,14 @@ export default {
     .col_2 {
       width: calc(100% / 6);
       // height: calc(100% / 2);
-    }
 
-    img {
-      padding: 1rem;
-      height: 185px;
-      width: 185px;
-      object-fit: cover;
-      object-position: top;
+      img {
+        padding: 1rem;
+        height: 185px;
+        width: 185px;
+        object-fit: cover;
+        object-position: top;
+      }
     }
 
     h3 {

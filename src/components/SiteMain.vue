@@ -7,7 +7,7 @@
           v-for="card in cards"
           :key="card.ID"
           :comicImg="card.thumb"
-          :comicName="card.series"
+          :comicName="card.series.toUpperCase()"
           class="col_2"
         />
       </div>
@@ -162,18 +162,20 @@ export default {
     }
 
     .col_2 {
-      background-color: chartreuse;
       width: calc(100% / 6);
-      height: calc(100% / 2);
+      // height: calc(100% / 2);
     }
 
     img {
-      width: 50%;
-      // object-fit: cover;
-      // object-position: top;
+      padding: 1rem;
+      height: 185px;
+      width: 185px;
+      object-fit: cover;
+      object-position: top;
     }
 
     h3 {
+      padding: 2px 1rem;
       color: white;
       font-size: 0.8rem;
     }

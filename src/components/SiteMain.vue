@@ -3,17 +3,14 @@
     <div class="content">
       <!-- Here goes the grid -->
       <div class="row">
-        <div>
-          <Card
-            v-for="card in cards"
-            :key="card.ID"
-            :comicImg="card.thumb"
-            :comicName="card.series"
-          />
-        </div>
+        <Card
+          v-for="card in cards"
+          :key="card.ID"
+          :comicImg="card.thumb"
+          :comicName="card.series"
+          class="col_2"
+        />
       </div>
-
-      <span> --&#62; Content goes here &#60;-- </span>
     </div>
     <div class="grid">
       <div class="row">
@@ -150,18 +147,35 @@ export default {
 .siteMain {
   position: relative;
   z-index: 1;
-  height: 236px;
+  // height: 236px;
   background-color: black;
 
   .content {
-    height: 118px;
+    // height: 118px;
     margin: auto;
     width: 70%;
 
-    span {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    .col_2 {
+      background-color: chartreuse;
+      width: calc(100% / 6);
+      height: calc(100% / 2);
+    }
+
+    img {
+      width: 50%;
+      // object-fit: cover;
+      // object-position: top;
+    }
+
+    h3 {
       color: white;
-      font-size: 2rem;
-      line-height: 118px;
+      font-size: 0.8rem;
     }
   }
 

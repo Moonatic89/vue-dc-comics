@@ -46,10 +46,11 @@
 
   li {
     padding: 0 0.7rem;
-    line-height: 118px;
+    line-height: 115px;
   }
   .bottomLine {
-    border-bottom: 2px solid blue;
+    color: $primaryColor;
+    border-bottom: 3px solid $primaryColor;
   }
 }
 </style>

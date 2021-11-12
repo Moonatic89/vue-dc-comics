@@ -150,7 +150,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-@import;
+@import "../assets/scss/variables.scss";
 .siteMain {
   position: relative;
   z-index: 1;
@@ -182,7 +182,7 @@ export default {
         font-size: 1.3rem;
         width: 250px;
         height: 50px;
-        background-color: cornflowerblue;
+        background-color: $primaryColor;
         line-height: 50px;
         text-align: center;
       }
@@ -218,7 +218,7 @@ export default {
 
   .grid {
     height: 118px;
-    background-color: cornflowerblue;
+    background-color: $primaryColor;
 
     ul {
       height: 118px;

@@ -86,6 +86,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+@import "../assets/scss/variables.scss";
+
 .siteFooter {
   width: 100%;
   height: calc(100vh - 354px);
@@ -142,7 +144,7 @@
     }
 
     .btn {
-      border: 1px solid cornflowerblue;
+      border: 1px solid $primaryColor;
       padding: 0.5rem;
       color: white;
     }
@@ -154,7 +156,7 @@
     }
 
     ul :first-child {
-      color: cornflowerblue;
+      color: $primaryColor;
     }
 
     li {

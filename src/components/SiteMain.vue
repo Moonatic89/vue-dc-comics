@@ -11,7 +11,7 @@
       <div class="row">
         <Card
           v-for="card in cards"
-          :key="card.ID"
+          :key="card.thumb"
           :comicImg="card.thumb"
           :comicName="card.series.toUpperCase()"
           class="col_2"

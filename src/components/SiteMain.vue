@@ -173,7 +173,7 @@ export default {
 
     .sectionTag {
       transform: translate(0, -50%);
-      width: 70%;
+      width: 50%;
       margin: auto;
       color: white;
 
